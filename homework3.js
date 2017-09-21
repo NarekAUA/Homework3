@@ -15,7 +15,7 @@ const fullName = function(firstName, lastName){
 	return firstName + " " + lastName;
 }
 
-const myAwesomeFunc = function(str1, str2, str3){
+const strLengthComp = function(str1, str2, str3){
 	if (str1.length > str2.length && str1.length > str3.length) {
 		return str1;
 	}
