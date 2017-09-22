@@ -19,12 +19,24 @@ const strLengthComp = function(str1, str2, str3){
 	if (str1.length > str2.length && str1.length > str3.length) {
 		return str1;
 	}
-	if (str2.length > str1.length && str2.length > str3.length) {
+	else if (str2.length > str1.length && str2.length > str3.length) {
 		return str2;
 	}
-	if (str3.length > str1.length && str3.length > str2.length) {
+	else if (str3.length > str1.length && str3.length > str2.length) {
 		return str3;
 	}
+	else if (str1.length === str2.length && str1.length > str3.length) {
+		return str1 + " " + str2;
+	}
+	else if (str2.length === str3.length && str2.length > str1.length) {
+		return str2 + " " + str3;
+ 	}
+ 	else if (str1.length === str3.length && str1.length > str2.length) {
+ 		return str1 + " " + str3;
+ 	}
+ 	else {
+ 		return str1 + " " + str2 + " " + str3;
+ 	}
 }
 
 const comparator = function(num1, num2){
